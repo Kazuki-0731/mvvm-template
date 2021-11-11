@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_calc_margin_top">40dp</dimen>
+    <dimen name="activity_calc_margin_start">40dp</dimen>
+    <dimen name="activity_calc_margin_end">40dp</dimen>
+</resources>
