@@ -11,14 +11,15 @@ import javax.inject.Singleton
 @Singleton
 @Component(modules = [
     AndroidInjectionModule::class,
-    ActivityModule::class
+    ActivityModule::class,
+    ViewModelModule::class
 ])
 interface AppComponent : AndroidInjector<MainApplication> {
     @Component.Builder
     interface Builder {
         @BindsInstance
-        fun application(application: Application): Builder?
-        fun build(): AppComponent?
+        fun application(application: Application): Builder
+        fun build(): AppComponent
     }
 
     override fun inject(application: MainApplication?)

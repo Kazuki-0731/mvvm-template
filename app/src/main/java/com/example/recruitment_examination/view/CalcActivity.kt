@@ -1,6 +1,5 @@
 package com.example.recruitment_examination.view
 
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
@@ -20,13 +19,9 @@ class CalcActivity : AppCompatActivity(), HasAndroidInjector {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calc)
-    }
-
-    override fun onNewIntent(intent: Intent?) {
-        super.onNewIntent(intent)
-
         Timber.d("CalcActivity onNewIntent")
         Log.d("debug", "CalcActivity onNewIntent")
+
         replaceFragment(CalcFragment.newInstance(), R.id.calc_content_view)
     }
 
