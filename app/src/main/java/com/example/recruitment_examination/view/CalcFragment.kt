@@ -9,11 +9,10 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.example.recruitment_examination.R
 import com.example.recruitment_examination.databinding.FragmentCalcBinding
-import com.example.recruitment_examination.di.Injectable
 import com.example.recruitment_examination.viewmodel.CalcViewModel
 import timber.log.Timber
 
-class CalcFragment : Fragment() , Injectable {
+class CalcFragment : Fragment() {
 //    @Inject
 //    lateinit var viewModelFactory: ViewModelProvider.Factory
 
