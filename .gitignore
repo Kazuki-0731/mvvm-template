@@ -14,3 +14,6 @@
 .cxx
 local.properties
 /buildSrc/build/
+.idea/gradle.xml
+.idea/misc.xml
+
