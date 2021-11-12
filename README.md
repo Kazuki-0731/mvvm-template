@@ -4,4 +4,6 @@
 
 ## 設計
 * MVVM
+  Google公式のMVVMリポジトリを参考にしています。
+  https://github.com/android/architecture-components-samples/tree/master
 

@@ -2,7 +2,7 @@ package com.example.recruitment_examination.di
 
 import android.app.Application
 import com.example.recruitment_examination.MainApplication
-import com.example.recruitment_examination.di.module.CalcModule
+import com.example.recruitment_examination.di.module.CalcActivityModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjectionModule
@@ -16,7 +16,7 @@ import javax.inject.Singleton
 @Component(modules = [
     AndroidInjectionModule::class,
     AppModule::class,
-    CalcModule::class
+    CalcActivityModule::class
 ])
 interface AppComponent : AndroidInjector<MainApplication> {
     @Component.Builder

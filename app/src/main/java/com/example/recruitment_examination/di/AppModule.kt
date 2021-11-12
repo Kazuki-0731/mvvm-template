@@ -4,5 +4,15 @@ import dagger.Module
 
 @Module(includes = [ViewModelModule::class])
 class AppModule {
-    // WebAPIなどを追加予定
+    //　今後保守する時用
+//    @Singleton
+//    @Provides
+//    fun provideTestService(): TestService {
+//        return Retrofit.Builder()
+//            .baseUrl("https://")
+//            .addConverterFactory(GsonConverterFactory.create())
+//            .addCallAdapterFactory(LiveDataCallAdapterFactory())
+//            .build()
+//            .create(TestService::class.java)
+//    }
 }
