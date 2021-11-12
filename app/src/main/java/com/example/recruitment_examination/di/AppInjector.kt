@@ -3,6 +3,9 @@ package com.example.recruitment_examination.di
 import com.example.recruitment_examination.ActivityLifecycleHandler
 import com.example.recruitment_examination.MainApplication
 
+/**
+ * Dagger保持
+ */
 class AppInjector {
     companion object {
         var component: AppComponent? = null

@@ -2,17 +2,21 @@ package com.example.recruitment_examination.di
 
 import android.app.Application
 import com.example.recruitment_examination.MainApplication
+import com.example.recruitment_examination.di.module.CalcModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjectionModule
 import dagger.android.AndroidInjector
 import javax.inject.Singleton
 
+/**
+ * Injectする対象とInterface
+ */
 @Singleton
 @Component(modules = [
     AndroidInjectionModule::class,
-    ActivityModule::class,
-    ViewModelModule::class
+    AppModule::class,
+    CalcModule::class
 ])
 interface AppComponent : AndroidInjector<MainApplication> {
     @Component.Builder

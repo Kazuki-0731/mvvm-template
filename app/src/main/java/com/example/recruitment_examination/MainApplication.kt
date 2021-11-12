@@ -7,6 +7,9 @@ import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasAndroidInjector
 import javax.inject.Inject
 
+/**
+ * アプリ全Inject管理
+ */
 class MainApplication : Application(), HasAndroidInjector {
 
     @Inject
