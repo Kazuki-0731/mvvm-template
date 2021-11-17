@@ -38,45 +38,46 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.3.1'
-    implementation 'com.google.android.material:material:1.4.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
-    testImplementation 'junit:junit:4.+'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    // Androidx
+    implementation Dep.Androidx.core
+    implementation Dep.Androidx.appcompat
+    implementation Dep.Androidx.constraintlayout
+    implementation Dep.Google.material
+    implementation Dep.Androidx.fragment
 
     // デバッグ用
-    implementation 'com.jakewharton.timber:timber:5.0.1'
+    implementation Dep.Log.timber
 
     // DI
-    implementation 'com.google.dagger:dagger:2.40'
-    implementation 'com.google.dagger:dagger-android:2.40'
-    implementation 'com.google.dagger:dagger-android-support:2.40'
-    annotationProcessor 'com.google.dagger:dagger-compiler:2.40'
-    annotationProcessor 'com.google.dagger:dagger-android-processor:2.40'
-    kapt 'com.google.dagger:dagger-compiler:2.40'
-    kapt 'com.google.dagger:dagger-android-processor:2.40'
+    implementation Dep.Dagger.core
+    implementation Dep.Dagger.android
+    implementation Dep.Dagger.androidSupport
+    annotationProcessor Dep.Dagger.compiler
+    annotationProcessor Dep.Dagger.androidProcessor
+    kapt Dep.Dagger.compiler
+    kapt Dep.Dagger.androidProcessor
 
     // lifecycle
-    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0'
-    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.4.0'
-    implementation 'androidx.lifecycle:lifecycle-common-java8:2.4.0'
+    implementation Dep.Lifecycle.livedata_ktx
+    implementation Dep.Lifecycle.runtime_ktx
+    implementation Dep.Lifecycle.common_java8
     //noinspection LifecycleAnnotationProcessorWithJava8
-    kapt 'androidx.lifecycle:lifecycle-compiler:2.4.0'
+    kapt Dep.Lifecycle.compiler
 
-    // fragment
-    implementation 'androidx.fragment:fragment-ktx:1.3.6'
-
-//    implementation Dep.Dagger.core
-//    implementation Dep.Dagger.android
-//    implementation Dep.Dagger.androidSupport
-//    annotationProcessor Dep.Dagger.compiler
-//    annotationProcessor Dep.Dagger.androidProcessor
-//    kapt Dep.Dagger.compiler
-//    kapt Dep.Dagger.androidProcessor
+    // test module
+    testImplementation Dep.Junit.junit
+    testImplementation Dep.Androidx.Test.core
+    androidTestImplementation Dep.Androidx.Test.extJunit
+    androidTestImplementation Dep.Androidx.Test.espressoCore
+    androidTestImplementation Dep.Androidx.Test.runner
+    androidTestImplementation Dep.Androidx.Test.rules
+    androidTestImplementation Dep.Androidx.Test.espressoIntents
+    androidTestImplementation Dep.Mockito.core
 }
