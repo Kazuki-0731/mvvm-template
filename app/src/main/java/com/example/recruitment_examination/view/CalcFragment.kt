@@ -38,8 +38,6 @@ class CalcFragment : Fragment(), Injectable {
             requireActivity(),
             viewModelFactory
         ).get(CalcViewModel::class.java)
-//        viewModel.navigator = this
-//        binding.viewModel = viewModel
 
         viewModel.test()
 
