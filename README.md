@@ -1,9 +1,5 @@
-# 電卓の作成
-## 要件
-* 自然数同士の２項による四則計算
+# MVVMのテンプレートアプリ
+Google公式のMVVMリポジトリを参考にしています
 
-## 設計
-* MVVM
-  Google公式のMVVMリポジトリを参考にしています。
-  https://github.com/android/architecture-components-samples/tree/master
+https://github.com/android/architecture-components-samples/tree/master
 
