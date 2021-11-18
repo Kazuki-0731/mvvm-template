@@ -1,4 +1,4 @@
-package com.example.recruitment_examination
+package com.example.mvvm_template
 
 import android.app.Activity
 import android.app.Application

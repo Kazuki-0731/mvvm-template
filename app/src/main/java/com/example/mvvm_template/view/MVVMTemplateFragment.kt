@@ -1,4 +1,4 @@
-package com.example.recruitment_examination.view
+package com.example.mvvm_template.view
 
 import android.content.Context
 import android.os.Bundle
@@ -8,19 +8,19 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.recruitment_examination.R
-import com.example.recruitment_examination.databinding.FragmentCalcBinding
-import com.example.recruitment_examination.di.Injectable
-import com.example.recruitment_examination.viewmodel.CalcViewModel
+import com.example.mvvm_template.R
+import com.example.mvvm_template.databinding.FragmentMvvmTemplateBinding
+import com.example.mvvm_template.di.Injectable
+import com.example.mvvm_template.viewmodel.MVVMTemplateViewModel
 import dagger.android.support.AndroidSupportInjection
 import javax.inject.Inject
 
-class CalcFragment : Fragment(), Injectable {
+class MVVMTemplateFragment : Fragment(), Injectable {
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
 
-    private lateinit var binding: FragmentCalcBinding
-    private lateinit var viewModel: CalcViewModel
+    private lateinit var binding: FragmentMvvmTemplateBinding
+    private lateinit var viewModel: MVVMTemplateViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -29,7 +29,7 @@ class CalcFragment : Fragment(), Injectable {
     ): View {
         binding = DataBindingUtil.inflate(
             inflater,
-            R.layout.fragment_calc,
+            R.layout.fragment_mvvm_template,
             container,
             false
         )
@@ -37,7 +37,7 @@ class CalcFragment : Fragment(), Injectable {
         viewModel = ViewModelProvider(
             requireActivity(),
             viewModelFactory
-        ).get(CalcViewModel::class.java)
+        ).get(MVVMTemplateViewModel::class.java)
 
         viewModel.test()
 
@@ -51,6 +51,6 @@ class CalcFragment : Fragment(), Injectable {
 
     companion object {
         @JvmStatic
-        fun newInstance() = CalcFragment()
+        fun newInstance() = MVVMTemplateFragment()
     }
 }

@@ -1,7 +1,8 @@
-package com.example.recruitment_examination.di
+package com.example.mvvm_template.di
 
-import com.example.recruitment_examination.ActivityLifecycleHandler
-import com.example.recruitment_examination.MainApplication
+import com.example.mvvm_template.ActivityLifecycleHandler
+import com.example.mvvm_template.MainApplication
+import com.example.mvvm_template.di.DaggerAppComponent
 
 /**
  * Dagger保持

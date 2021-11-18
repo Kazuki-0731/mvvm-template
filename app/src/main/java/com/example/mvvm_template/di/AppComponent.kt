@@ -1,8 +1,8 @@
-package com.example.recruitment_examination.di
+package com.example.mvvm_template.di
 
 import android.app.Application
-import com.example.recruitment_examination.MainApplication
-import com.example.recruitment_examination.di.module.CalcActivityModule
+import com.example.mvvm_template.MainApplication
+import com.example.mvvm_template.di.module.MVVMTemplateActivityModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjectionModule
@@ -16,7 +16,7 @@ import javax.inject.Singleton
 @Component(modules = [
     AndroidInjectionModule::class,
     AppModule::class,
-    CalcActivityModule::class
+    MVVMTemplateActivityModule::class
 ])
 interface AppComponent : AndroidInjector<MainApplication> {
     @Component.Builder

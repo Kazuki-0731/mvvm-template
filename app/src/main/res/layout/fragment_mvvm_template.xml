@@ -11,12 +11,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="calc result"
+            android:text="@string/app_name"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            tools:text="calc result"
+            tools:text="@string/app_name"
             />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

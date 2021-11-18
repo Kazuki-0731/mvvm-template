@@ -1,4 +1,4 @@
-package com.example.recruitment_examination.viewmodel
+package com.example.mvvm_template.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

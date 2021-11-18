@@ -1,7 +1,7 @@
-package com.example.recruitment_examination
+package com.example.mvvm_template
 
 import android.app.Application
-import com.example.recruitment_examination.di.AppInjector
+import com.example.mvvm_template.di.AppInjector
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasAndroidInjector

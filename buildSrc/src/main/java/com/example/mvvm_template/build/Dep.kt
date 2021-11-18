@@ -1,4 +1,4 @@
-package com.example.recruitment_examination.build
+package com.example.mvvm_template.build
 
 object Dep {
     object Androidx {
