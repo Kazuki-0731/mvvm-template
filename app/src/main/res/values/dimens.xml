@@ -3,4 +3,10 @@
     <dimen name="activity_margin_top">40dp</dimen>
     <dimen name="activity_margin_start">40dp</dimen>
     <dimen name="activity_margin_end">40dp</dimen>
+
+    <dimen name="textSize">30sp</dimen>
+
+    <dimen name="fab_margin_end">30dp</dimen>
+    <dimen name="fab_margin_bottom">60dp</dimen>
+
 </resources>

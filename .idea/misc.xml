@@ -6,6 +6,7 @@
         <entry key="app/src/main/res/drawable/shape_rounded_corners_10dp.xml" value="0.3148148148148148" />
         <entry key="app/src/main/res/layout/activity_calc.xml" value="0.16770833333333332" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.15364583333333334" />
+        <entry key="app/src/main/res/layout/activity_mvvm_template.xml" value="0.25" />
         <entry key="app/src/main/res/layout/calc_fragment.xml" value="0.16770833333333332" />
         <entry key="app/src/main/res/layout/fragment_calc.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_mvvm_template.xml" value="0.2033514492753623" />
