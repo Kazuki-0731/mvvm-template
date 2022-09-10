@@ -4,7 +4,7 @@ import dagger.Module
 
 @Module(includes = [ViewModelModule::class])
 class AppModule {
-    //　今後保守する時用
+    //　今後APIを追加する場合
 //    @Singleton
 //    @Provides
 //    fun provideTestService(): TestService {
