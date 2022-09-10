@@ -43,6 +43,35 @@ android {
     }
 }
 
+configurations {
+    ktlint
+}
+
+// Add コードスタイルをチェック
+task ktlint(type: JavaExec, group: "verification") {
+    description = "Check Kotlin code style."
+    classpath = configurations.ktlint
+    // main = "com.pinterest.ktlint.Main" は非推奨
+    mainClass.set("com.pinterest.ktlint.Main")
+    args "src/**/*.kt", "--color", "--reporter=plain", "--reporter=checkstyle,output=${buildDir}/ktlint.xml"
+    // 途中終了させない
+    ignoreExitValue true
+}
+
+// Add
+check.dependsOn ktlint
+
+// Add 自動でフォーマットしてくれる
+task ktlintFormat(type: JavaExec, group: "formatting") {
+    description = "Fix Kotlin code style deviations."
+    // main = "com.pinterest.ktlint.Main" は非推奨
+    mainClass.set("com.pinterest.ktlint.Main")
+    classpath = configurations.ktlint
+    args "-F", "src/**/*.kt"
+    // 途中終了させない
+    ignoreExitValue true
+}
+
 dependencies {
 
     // Androidx
@@ -80,4 +109,7 @@ dependencies {
     androidTestImplementation Dep.Androidx.Test.rules
     androidTestImplementation Dep.Androidx.Test.espressoIntents
     androidTestImplementation Dep.Mockito.core
+
+    // ktlint
+    ktlint "com.pinterest:ktlint:0.47.1"
 }
