@@ -10,13 +10,11 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.mvvm_template.R
 import com.example.mvvm_template.databinding.FragmentMvvmTemplateBinding
-import com.example.mvvm_template.di.Injectable
 import com.example.mvvm_template.viewmodel.MVVMTemplateViewModel
-import com.google.android.material.snackbar.Snackbar
 import dagger.android.support.AndroidSupportInjection
 import javax.inject.Inject
 
-class MVVMTemplateFragment : Fragment(), Injectable {
+class MVVMTemplateFragment : Fragment() {
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
 
